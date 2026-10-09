@@ -1,0 +1,831 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:fb89d1d7-f045-5cee-8cfd-02c9f23858b4",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-06T16:50:19Z",
+  "component": {
+   "type": "application",
+   "name": "LLAMA_CPP",
+   "version": "83b357604d34",
+   "bom-ref": "pkg:generic/anticloud/LLAMA_CPP@83b357604d34",
+   "purl": "pkg:generic/anticloud/LLAMA_CPP@83b357604d34",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "anticloud:source-commit",
+    "value": "null"
+   },
+   {
+    "name": "anticloud:source-url",
+    "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+   },
+   {
+    "name": "anticloud:tier",
+    "value": "tier-agent"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "library",
+   "name": "ggml",
+   "version": "unspecified",
+   "purl": "pkg:generic/ggml",
+   "bom-ref": "native/ggml@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "numpy",
+   "version": "(>=2.2.6",
+   "purl": "pkg:pypi/numpy@(>=2.2.6",
+   "bom-ref": "pypi/numpy@(>=2.2.6"
+  },
+  {
+   "type": "library",
+   "name": "sentencepiece",
+   "version": "(>=0.1.98",
+   "purl": "pkg:pypi/sentencepiece@(>=0.1.98",
+   "bom-ref": "pypi/sentencepiece@(>=0.1.98"
+  },
+  {
+   "type": "library",
+   "name": "transformers",
+   "version": "(==4.57.6)",
+   "purl": "pkg:pypi/transformers@(==4.57.6)",
+   "bom-ref": "pypi/transformers@(==4.57.6)"
+  },
+  {
+   "type": "library",
+   "name": "protobuf",
+   "version": "(>=4.21.0",
+   "purl": "pkg:pypi/protobuf@(>=4.21.0",
+   "bom-ref": "pypi/protobuf@(>=4.21.0"
+  },
+  {
+   "type": "library",
+   "name": "torch",
+   "version": "(>=2.6.0",
+   "purl": "pkg:pypi/torch@(>=2.6.0",
+   "bom-ref": "pypi/torch@(>=2.6.0"
+  },
+  {
+   "type": "library",
+   "name": "gguf",
+   "version": "@",
+   "purl": "pkg:pypi/gguf@@",
+   "bom-ref": "pypi/gguf@@"
+  },
+  {
+   "type": "library",
+   "name": "Threads",
+   "version": "unspecified",
+   "purl": "pkg:generic/Threads",
+   "bom-ref": "native/Threads@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "@chromatic-com/storybook",
+   "version": "5.2.1",
+   "purl": "pkg:npm/@chromatic-com/storybook@5.2.1",
+   "bom-ref": "npm/@chromatic-com/storybook@5.2.1"
+  },
+  {
+   "type": "library",
+   "name": "@eslint/compat",
+   "version": "1.4.1",
+   "purl": "pkg:npm/@eslint/compat@1.4.1",
+   "bom-ref": "npm/@eslint/compat@1.4.1"
+  },
+  {
+   "type": "library",
+   "name": "@eslint/js",
+   "version": "9.39.2",
+   "purl": "pkg:npm/@eslint/js@9.39.2",
+   "bom-ref": "npm/@eslint/js@9.39.2"
+  },
+  {
+   "type": "library",
+   "name": "@internationalized/date",
+   "version": "3.12.2",
+   "purl": "pkg:npm/@internationalized/date@3.12.2",
+   "bom-ref": "npm/@internationalized/date@3.12.2"
+  },
+  {
+   "type": "library",
+   "name": "@lucide/svelte",
+   "version": "1.25.0",
+   "purl": "pkg:npm/@lucide/svelte@1.25.0",
+   "bom-ref": "npm/@lucide/svelte@1.25.0"
+  },
+  {
+   "type": "library",
+   "name": "@modelcontextprotocol/sdk",
+   "version": "1.30.0",
+   "purl": "pkg:npm/@modelcontextprotocol/sdk@1.30.0",
+   "bom-ref": "npm/@modelcontextprotocol/sdk@1.30.0"
+  },
+  {
+   "type": "library",
+   "name": "@playwright/test",
+   "version": "1.56.1",
+   "purl": "pkg:npm/@playwright/test@1.56.1",
+   "bom-ref": "npm/@playwright/test@1.56.1"
+  },
+  {
+   "type": "library",
+   "name": "@storybook/addon-a11y",
+   "version": "10.5.6",
+   "purl": "pkg:npm/@storybook/addon-a11y@10.5.6",
+   "bom-ref": "npm/@storybook/addon-a11y@10.5.6"
+  },
+  {
+   "type": "library",
+   "name": "@storybook/addon-docs",
+   "version": "10.5.6",
+   "purl": "pkg:npm/@storybook/addon-docs@10.5.6",
+   "bom-ref": "npm/@storybook/addon-docs@10.5.6"
+  },
+  {
+   "type": "library",
+   "name": "@storybook/addon-mcp",
+   "version": "0.7.0",
+   "purl": "pkg:npm/@storybook/addon-mcp@0.7.0",
+   "bom-ref": "npm/@storybook/addon-mcp@0.7.0"
+  },
+  {
+   "type": "library",
+   "name": "@storybook/addon-svelte-csf",
+   "version": "5.1.2",
+   "purl": "pkg:npm/@storybook/addon-svelte-csf@5.1.2",
+   "bom-ref": "npm/@storybook/addon-svelte-csf@5.1.2"
+  },
+  {
+   "type": "library",
+   "name": "@storybook/addon-vitest",
+   "version": "10.5.6",
+   "purl": "pkg:npm/@storybook/addon-vitest@10.5.6",
+   "bom-ref": "npm/@storybook/addon-vitest@10.5.6"
+  },
+  {
+   "type": "library",
+   "name": "@storybook/sveltekit",
+   "version": "10.5.6",
+   "purl": "pkg:npm/@storybook/sveltekit@10.5.6",
+   "bom-ref": "npm/@storybook/sveltekit@10.5.6"
+  },
+  {
+   "type": "library",
+   "name": "@sveltejs/adapter-static",
+   "version": "3.0.10",
+   "purl": "pkg:npm/@sveltejs/adapter-static@3.0.10",
+   "bom-ref": "npm/@sveltejs/adapter-static@3.0.10"
+  },
+  {
+   "type": "library",
+   "name": "@sveltejs/kit",
+   "version": "2.70.2",
+   "purl": "pkg:npm/@sveltejs/kit@2.70.2",
+   "bom-ref": "npm/@sveltejs/kit@2.70.2"
+  },
+  {
+   "type": "library",
+   "name": "@sveltejs/vite-plugin-svelte",
+   "version": "6.2.1",
+   "purl": "pkg:npm/@sveltejs/vite-plugin-svelte@6.2.1",
+   "bom-ref": "npm/@sveltejs/vite-plugin-svelte@6.2.1"
+  },
+  {
+   "type": "library",
+   "name": "@tailwindcss/forms",
+   "version": "0.5.10",
+   "purl": "pkg:npm/@tailwindcss/forms@0.5.10",
+   "bom-ref": "npm/@tailwindcss/forms@0.5.10"
+  },
+  {
+   "type": "library",
+   "name": "@tailwindcss/typography",
+   "version": "0.5.16",
+   "purl": "pkg:npm/@tailwindcss/typography@0.5.16",
+   "bom-ref": "npm/@tailwindcss/typography@0.5.16"
+  },
+  {
+   "type": "library",
+   "name": "@tailwindcss/vite",
+   "version": "4.1.11",
+   "purl": "pkg:npm/@tailwindcss/vite@4.1.11",
+   "bom-ref": "npm/@tailwindcss/vite@4.1.11"
+  },
+  {
+   "type": "library",
+   "name": "@types/node",
+   "version": "24.13.0",
+   "purl": "pkg:npm/@types/node@24.13.0",
+   "bom-ref": "npm/@types/node@24.13.0"
+  },
+  {
+   "type": "library",
+   "name": "@vite-pwa/assets-generator",
+   "version": "1.0.2",
+   "purl": "pkg:npm/@vite-pwa/assets-generator@1.0.2",
+   "bom-ref": "npm/@vite-pwa/assets-generator@1.0.2"
+  },
+  {
+   "type": "library",
+   "name": "@vite-pwa/sveltekit",
+   "version": "1.1.0",
+   "purl": "pkg:npm/@vite-pwa/sveltekit@1.1.0",
+   "bom-ref": "npm/@vite-pwa/sveltekit@1.1.0"
+  },
+  {
+   "type": "library",
+   "name": "@vitest/browser",
+   "version": "4.1.10",
+   "purl": "pkg:npm/@vitest/browser@4.1.10",
+   "bom-ref": "npm/@vitest/browser@4.1.10"
+  },
+  {
+   "type": "library",
+   "name": "@vitest/browser-playwright",
+   "version": "4.1.10",
+   "purl": "pkg:npm/@vitest/browser-playwright@4.1.10",
+   "bom-ref": "npm/@vitest/browser-playwright@4.1.10"
+  },
+  {
+   "type": "library",
+   "name": "@vitest/coverage-v8",
+   "version": "4.1.10",
+   "purl": "pkg:npm/@vitest/coverage-v8@4.1.10",
+   "bom-ref": "npm/@vitest/coverage-v8@4.1.10"
+  },
+  {
+   "type": "library",
+   "name": "bits-ui",
+   "version": "2.18.1",
+   "purl": "pkg:npm/bits-ui@2.18.1",
+   "bom-ref": "npm/bits-ui@2.18.1"
+  },
+  {
+   "type": "library",
+   "name": "clsx",
+   "version": "2.1.1",
+   "purl": "pkg:npm/clsx@2.1.1",
+   "bom-ref": "npm/clsx@2.1.1"
+  },
+  {
+   "type": "library",
+   "name": "dexie",
+   "version": "4.4.3",
+   "purl": "pkg:npm/dexie@4.4.3",
+   "bom-ref": "npm/dexie@4.4.3"
+  },
+  {
+   "type": "library",
+   "name": "dompurify",
+   "version": "3.4.13",
+   "purl": "pkg:npm/dompurify@3.4.13",
+   "bom-ref": "npm/dompurify@3.4.13"
+  },
+  {
+   "type": "library",
+   "name": "eslint",
+   "version": "9.39.4",
+   "purl": "pkg:npm/eslint@9.39.4",
+   "bom-ref": "npm/eslint@9.39.4"
+  },
+  {
+   "type": "library",
+   "name": "eslint-config-prettier",
+   "version": "10.1.8",
+   "purl": "pkg:npm/eslint-config-prettier@10.1.8",
+   "bom-ref": "npm/eslint-config-prettier@10.1.8"
+  },
+  {
+   "type": "library",
+   "name": "eslint-plugin-perfectionist",
+   "version": "^5.10.1",
+   "purl": "pkg:npm/eslint-plugin-perfectionist@^5.10.1",
+   "bom-ref": "npm/eslint-plugin-perfectionist@^5.10.1"
+  },
+  {
+   "type": "library",
+   "name": "eslint-plugin-simple-import-sort",
+   "version": "^14.0.0",
+   "purl": "pkg:npm/eslint-plugin-simple-import-sort@^14.0.0",
+   "bom-ref": "npm/eslint-plugin-simple-import-sort@^14.0.0"
+  },
+  {
+   "type": "library",
+   "name": "eslint-plugin-storybook",
+   "version": "10.5.6",
+   "purl": "pkg:npm/eslint-plugin-storybook@10.5.6",
+   "bom-ref": "npm/eslint-plugin-storybook@10.5.6"
+  },
+  {
+   "type": "library",
+   "name": "eslint-plugin-svelte",
+   "version": "3.19.0",
+   "purl": "pkg:npm/eslint-plugin-svelte@3.19.0",
+   "bom-ref": "npm/eslint-plugin-svelte@3.19.0"
+  },
+  {
+   "type": "library",
+   "name": "fflate",
+   "version": "0.8.3",
+   "purl": "pkg:npm/fflate@0.8.3",
+   "bom-ref": "npm/fflate@0.8.3"
+  },
+  {
+   "type": "library",
+   "name": "globals",
+   "version": "16.5.0",
+   "purl": "pkg:npm/globals@16.5.0",
+   "bom-ref": "npm/globals@16.5.0"
+  },
+  {
+   "type": "library",
+   "name": "highlight.js",
+   "version": "11.11.1",
+   "purl": "pkg:npm/highlight.js@11.11.1",
+   "bom-ref": "npm/highlight.js@11.11.1"
+  },
+  {
+   "type": "library",
+   "name": "http-server",
+   "version": "14.1.1",
+   "purl": "pkg:npm/http-server@14.1.1",
+   "bom-ref": "npm/http-server@14.1.1"
+  },
+  {
+   "type": "library",
+   "name": "mdast",
+   "version": "3.0.0",
+   "purl": "pkg:npm/mdast@3.0.0",
+   "bom-ref": "npm/mdast@3.0.0"
+  },
+  {
+   "type": "library",
+   "name": "mdsvex",
+   "version": "0.12.7",
+   "purl": "pkg:npm/mdsvex@0.12.7",
+   "bom-ref": "npm/mdsvex@0.12.7"
+  },
+  {
+   "type": "library",
+   "name": "mermaid",
+   "version": "11.15.0",
+   "purl": "pkg:npm/mermaid@11.15.0",
+   "bom-ref": "npm/mermaid@11.15.0"
+  },
+  {
+   "type": "library",
+   "name": "mode-watcher",
+   "version": "1.1.0",
+   "purl": "pkg:npm/mode-watcher@1.1.0",
+   "bom-ref": "npm/mode-watcher@1.1.0"
+  },
+  {
+   "type": "library",
+   "name": "pdfjs-dist",
+   "version": "5.4.54",
+   "purl": "pkg:npm/pdfjs-dist@5.4.54",
+   "bom-ref": "npm/pdfjs-dist@5.4.54"
+  },
+  {
+   "type": "library",
+   "name": "playwright",
+   "version": "1.56.1",
+   "purl": "pkg:npm/playwright@1.56.1",
+   "bom-ref": "npm/playwright@1.56.1"
+  },
+  {
+   "type": "library",
+   "name": "prettier",
+   "version": "3.8.3",
+   "purl": "pkg:npm/prettier@3.8.3",
+   "bom-ref": "npm/prettier@3.8.3"
+  },
+  {
+   "type": "library",
+   "name": "prettier-plugin-svelte",
+   "version": "4.1.0",
+   "purl": "pkg:npm/prettier-plugin-svelte@4.1.0",
+   "bom-ref": "npm/prettier-plugin-svelte@4.1.0"
+  },
+  {
+   "type": "library",
+   "name": "prettier-plugin-tailwindcss",
+   "version": "0.8.0",
+   "purl": "pkg:npm/prettier-plugin-tailwindcss@0.8.0",
+   "bom-ref": "npm/prettier-plugin-tailwindcss@0.8.0"
+  },
+  {
+   "type": "library",
+   "name": "rehype-highlight",
+   "version": "7.0.2",
+   "purl": "pkg:npm/rehype-highlight@7.0.2",
+   "bom-ref": "npm/rehype-highlight@7.0.2"
+  },
+  {
+   "type": "library",
+   "name": "rehype-katex",
+   "version": "7.0.1",
+   "purl": "pkg:npm/rehype-katex@7.0.1",
+   "bom-ref": "npm/rehype-katex@7.0.1"
+  },
+  {
+   "type": "library",
+   "name": "rehype-stringify",
+   "version": "10.0.1",
+   "purl": "pkg:npm/rehype-stringify@10.0.1",
+   "bom-ref": "npm/rehype-stringify@10.0.1"
+  },
+  {
+   "type": "library",
+   "name": "remark",
+   "version": "15.0.1",
+   "purl": "pkg:npm/remark@15.0.1",
+   "bom-ref": "npm/remark@15.0.1"
+  },
+  {
+   "type": "library",
+   "name": "remark-breaks",
+   "version": "4.0.0",
+   "purl": "pkg:npm/remark-breaks@4.0.0",
+   "bom-ref": "npm/remark-breaks@4.0.0"
+  },
+  {
+   "type": "library",
+   "name": "remark-gfm",
+   "version": "4.0.1",
+   "purl": "pkg:npm/remark-gfm@4.0.1",
+   "bom-ref": "npm/remark-gfm@4.0.1"
+  },
+  {
+   "type": "library",
+   "name": "remark-html",
+   "version": "16.0.1",
+   "purl": "pkg:npm/remark-html@16.0.1",
+   "bom-ref": "npm/remark-html@16.0.1"
+  },
+  {
+   "type": "library",
+   "name": "remark-math",
+   "version": "6.0.0",
+   "purl": "pkg:npm/remark-math@6.0.0",
+   "bom-ref": "npm/remark-math@6.0.0"
+  },
+  {
+   "type": "library",
+   "name": "remark-rehype",
+   "version": "11.1.2",
+   "purl": "pkg:npm/remark-rehype@11.1.2",
+   "bom-ref": "npm/remark-rehype@11.1.2"
+  },
+  {
+   "type": "library",
+   "name": "sass",
+   "version": "1.100.0",
+   "purl": "pkg:npm/sass@1.100.0",
+   "bom-ref": "npm/sass@1.100.0"
+  },
+  {
+   "type": "library",
+   "name": "storybook",
+   "version": "10.5.6",
+   "purl": "pkg:npm/storybook@10.5.6",
+   "bom-ref": "npm/storybook@10.5.6"
+  },
+  {
+   "type": "library",
+   "name": "svelte",
+   "version": "5.56.1",
+   "purl": "pkg:npm/svelte@5.56.1",
+   "bom-ref": "npm/svelte@5.56.1"
+  },
+  {
+   "type": "library",
+   "name": "svelte-check",
+   "version": "4.6.0",
+   "purl": "pkg:npm/svelte-check@4.6.0",
+   "bom-ref": "npm/svelte-check@4.6.0"
+  },
+  {
+   "type": "library",
+   "name": "svelte-sonner",
+   "version": "1.1.1",
+   "purl": "pkg:npm/svelte-sonner@1.1.1",
+   "bom-ref": "npm/svelte-sonner@1.1.1"
+  },
+  {
+   "type": "library",
+   "name": "tailwind-merge",
+   "version": "3.6.0",
+   "purl": "pkg:npm/tailwind-merge@3.6.0",
+   "bom-ref": "npm/tailwind-merge@3.6.0"
+  },
+  {
+   "type": "library",
+   "name": "tailwind-variants",
+   "version": "3.3.1",
+   "purl": "pkg:npm/tailwind-variants@3.3.1",
+   "bom-ref": "npm/tailwind-variants@3.3.1"
+  },
+  {
+   "type": "library",
+   "name": "tailwindcss",
+   "version": "4.3.0",
+   "purl": "pkg:npm/tailwindcss@4.3.0",
+   "bom-ref": "npm/tailwindcss@4.3.0"
+  },
+  {
+   "type": "library",
+   "name": "tw-animate-css",
+   "version": "1.4.0",
+   "purl": "pkg:npm/tw-animate-css@1.4.0",
+   "bom-ref": "npm/tw-animate-css@1.4.0"
+  },
+  {
+   "type": "library",
+   "name": "typescript",
+   "version": "5.9.3",
+   "purl": "pkg:npm/typescript@5.9.3",
+   "bom-ref": "npm/typescript@5.9.3"
+  },
+  {
+   "type": "library",
+   "name": "typescript-eslint",
+   "version": "8.60.1",
+   "purl": "pkg:npm/typescript-eslint@8.60.1",
+   "bom-ref": "npm/typescript-eslint@8.60.1"
+  },
+  {
+   "type": "library",
+   "name": "unified",
+   "version": "11.0.5",
+   "purl": "pkg:npm/unified@11.0.5",
+   "bom-ref": "npm/unified@11.0.5"
+  },
+  {
+   "type": "library",
+   "name": "unist-util-visit",
+   "version": "5.1.0",
+   "purl": "pkg:npm/unist-util-visit@5.1.0",
+   "bom-ref": "npm/unist-util-visit@5.1.0"
+  },
+  {
+   "type": "library",
+   "name": "uuid",
+   "version": "13.0.2",
+   "purl": "pkg:npm/uuid@13.0.2",
+   "bom-ref": "npm/uuid@13.0.2"
+  },
+  {
+   "type": "library",
+   "name": "vite",
+   "version": "7.3.6",
+   "purl": "pkg:npm/vite@7.3.6",
+   "bom-ref": "npm/vite@7.3.6"
+  },
+  {
+   "type": "library",
+   "name": "vite-plugin-devtools-json",
+   "version": "0.2.1",
+   "purl": "pkg:npm/vite-plugin-devtools-json@0.2.1",
+   "bom-ref": "npm/vite-plugin-devtools-json@0.2.1"
+  },
+  {
+   "type": "library",
+   "name": "vitest",
+   "version": "4.1.10",
+   "purl": "pkg:npm/vitest@4.1.10",
+   "bom-ref": "npm/vitest@4.1.10"
+  },
+  {
+   "type": "library",
+   "name": "vitest-browser-svelte",
+   "version": "2.1.1",
+   "purl": "pkg:npm/vitest-browser-svelte@2.1.1",
+   "bom-ref": "npm/vitest-browser-svelte@2.1.1"
+  },
+  {
+   "type": "library",
+   "name": "workbox-window",
+   "version": "7.4.1",
+   "purl": "pkg:npm/workbox-window@7.4.1",
+   "bom-ref": "npm/workbox-window@7.4.1"
+  },
+  {
+   "type": "library",
+   "name": "tqdm",
+   "version": "(>=4.27)",
+   "purl": "pkg:pypi/tqdm@(>=4.27)",
+   "bom-ref": "pypi/tqdm@(>=4.27)"
+  },
+  {
+   "type": "library",
+   "name": "pyyaml",
+   "version": "(>=5.1)",
+   "purl": "pkg:pypi/pyyaml@(>=5.1)",
+   "bom-ref": "pypi/pyyaml@(>=5.1)"
+  },
+  {
+   "type": "library",
+   "name": "requests",
+   "version": "(>=2.25)",
+   "purl": "pkg:pypi/requests@(>=2.25)",
+   "bom-ref": "pypi/requests@(>=2.25)"
+  },
+  {
+   "type": "library",
+   "name": "OpenMP",
+   "version": "unspecified",
+   "purl": "pkg:generic/OpenMP",
+   "bom-ref": "native/OpenMP@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "Python3",
+   "version": "unspecified",
+   "purl": "pkg:generic/Python3",
+   "bom-ref": "native/Python3@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "Dawn",
+   "version": "unspecified",
+   "purl": "pkg:generic/Dawn",
+   "bom-ref": "native/Dawn@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "Vulkan",
+   "version": "unspecified",
+   "purl": "pkg:generic/Vulkan",
+   "bom-ref": "native/Vulkan@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "SPIRV-Headers",
+   "version": "unspecified",
+   "purl": "pkg:generic/SPIRV-Headers",
+   "bom-ref": "native/SPIRV-Headers@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "PkgConfig",
+   "version": "unspecified",
+   "purl": "pkg:generic/PkgConfig",
+   "bom-ref": "native/PkgConfig@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "DRM",
+   "version": "unspecified",
+   "purl": "pkg:generic/DRM",
+   "bom-ref": "native/DRM@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "IntelSYCL",
+   "version": "unspecified",
+   "purl": "pkg:generic/IntelSYCL",
+   "bom-ref": "native/IntelSYCL@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "DNNL",
+   "version": "unspecified",
+   "purl": "pkg:generic/DNNL",
+   "bom-ref": "native/DNNL@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "MKL",
+   "version": "unspecified",
+   "purl": "pkg:generic/MKL",
+   "bom-ref": "native/MKL@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "OpenVINO",
+   "version": "unspecified",
+   "purl": "pkg:generic/OpenVINO",
+   "bom-ref": "native/OpenVINO@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "OpenCL",
+   "version": "unspecified",
+   "purl": "pkg:generic/OpenCL",
+   "bom-ref": "native/OpenCL@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "MUSAToolkit",
+   "version": "unspecified",
+   "purl": "pkg:generic/MUSAToolkit",
+   "bom-ref": "native/MUSAToolkit@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "hip",
+   "version": "unspecified",
+   "purl": "pkg:generic/hip",
+   "bom-ref": "native/hip@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "hipblas",
+   "version": "unspecified",
+   "purl": "pkg:generic/hipblas",
+   "bom-ref": "native/hipblas@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "rocblas",
+   "version": "unspecified",
+   "purl": "pkg:generic/rocblas",
+   "bom-ref": "native/rocblas@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "rccl",
+   "version": "unspecified",
+   "purl": "pkg:generic/rccl",
+   "bom-ref": "native/rccl@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "runtime",
+   "version": "unspecified",
+   "purl": "pkg:generic/runtime",
+   "bom-ref": "native/runtime@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "et-common-libs",
+   "version": "unspecified",
+   "purl": "pkg:generic/et-common-libs",
+   "bom-ref": "native/et-common-libs@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "esperantoTrace",
+   "version": "unspecified",
+   "purl": "pkg:generic/esperantoTrace",
+   "bom-ref": "native/esperantoTrace@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "CUDAToolkit",
+   "version": "unspecified",
+   "purl": "pkg:generic/CUDAToolkit",
+   "bom-ref": "native/CUDAToolkit@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "NCCL",
+   "version": "unspecified",
+   "purl": "pkg:generic/NCCL",
+   "bom-ref": "native/NCCL@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "BLAS",
+   "version": "unspecified",
+   "purl": "pkg:generic/BLAS",
+   "bom-ref": "native/BLAS@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "DepBLAS",
+   "version": "unspecified",
+   "purl": "pkg:generic/DepBLAS",
+   "bom-ref": "native/DepBLAS@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "llama",
+   "version": "unspecified",
+   "purl": "pkg:generic/llama",
+   "bom-ref": "native/llama@unspecified"
+  },
+  {
+   "type": "library",
+   "name": "Llama",
+   "version": "unspecified",
+   "purl": "pkg:generic/Llama",
+   "bom-ref": "native/Llama@unspecified"
+  }
+ ],
+ "sha_unverified": true
+}
